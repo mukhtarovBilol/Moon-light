@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
+}
+
+/* header */
+
+.span {
+    background: red;
+    height: 5px;
+    position: fixed;
+    transition: opacity 0.3s;
+    z-index: 9999;
+    width: 0%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.header__logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap: 20px; 
+} 
+
+.header__item-link {
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.header__item-link:hover {
+    background: #fff;
+    color: purple;
+}
+
+/* header */
+
+/* image */
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.moon {
+    mix-blend-mode: screen;
+}
+
+.mountains__front {
+    z-index: 1;
+}
+
+.title {
+    position: absolute;
+    right: -350px;
+    color: #fff;
+    font-size: 110px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.btn {
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000;
+    z-index: 999;
+    transform: translateY(100px);
+}
+
+/* image */
+
+/* scroll */
+
+.scroll {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #180538, transparent);
+    z-index: 1000;
+}
+
+.scroll img {
+    position: absolute;
+}
+
+.scroll__cloud {
+    mix-blend-mode: luminosity;
+}
+
+.scroll__fantasy {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: top;
+}
+
+.cloud_1 {
+    top: 15%;
+    left: 5%;
+}
+
+.cloud_2 {
+    top: 15%;
+    left: 75%;
+}
+
+.cloud_3 {
+    top: 15%;
+    left: 40%;
+}
+
+.scroll__boat {
+    top: 75%;
+    left: 10%;
+}
+
+/* scroll */
